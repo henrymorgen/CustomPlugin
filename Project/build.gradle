@@ -1,0 +1,12 @@
+apply plugin: 'com.example.plugins.customplugin'
+
+buildscript {
+    repositories {
+        maven {
+            url uri('../repo')
+        }
+    }
+    dependencies {
+        classpath 'com.example.plugins:CustomPluginShare:1.0.0'
+    }
+}
